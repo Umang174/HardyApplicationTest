@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HardyApplicationTest</string>
+    <string name="paitentDetails">Fill All Details</string>
+    <string name="fullName">Full Name</string>
+    <string name="contactNo">Contact Number</string>
+    <string name="EmailAddress">EmailAddress</string>
+    <string name="Gender">Gender</string>
+    <string name="Disease">Disease</string>
+    <string name="Weight">Weight</string>
+    <string name="Disease_title">Disease Name</string>
+    <string name="Disease_Count">No. Of Cases</string>
+    <string name="patientID">ID</string>
+    <string name="patientName">Name</string>
+    <string name="success_message">Patient Register SuccessFully</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>FeMale</item>
+    </string-array>
+
+</resources>

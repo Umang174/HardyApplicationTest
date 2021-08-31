@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:id="@+id/top_RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_patient_Image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    app:cardCornerRadius="90dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/patient_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_launcher_background"></ImageView>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/lblPatientName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin15dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="false"
+                    android:text="Patient Name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/txtPatientName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblPatientName"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:singleLine="false"
+                    android:text="Patient Name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/lblContact"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPatientName"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="false"
+                    android:text="Contact No."
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/txtContact"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblContact"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:singleLine="false"
+                    android:text="Contact Number"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5dp">
+
+                    <TextView
+                        android:id="@+id/lblemail"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="Email :"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtemail"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="Email Value"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dob_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_layout"
+                    android:layout_marginTop="@dimen/margin5dp">
+
+                    <TextView
+                        android:id="@+id/lbldob"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="DOB :"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtDOB"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="DOB Value"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Gender_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dob_layout"
+                    android:layout_marginTop="@dimen/margin5dp">
+
+                    <TextView
+                        android:id="@+id/lblGender"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="Gender :"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtgender"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="Gender Value"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/weight_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Gender_layout"
+                    android:layout_marginTop="@dimen/margin5dp">
+
+                    <TextView
+                        android:id="@+id/lblweight"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="Weight :"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtweight"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="Weight Value"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/disease_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/weight_layout"
+                    android:layout_marginTop="@dimen/margin5dp">
+
+                    <TextView
+                        android:id="@+id/lbldisease"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="false"
+                        android:text="Disease :"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtdisease"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:lines="2"
+                        android:singleLine="false"
+                        android:text="Disease Value"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
