@@ -3,7 +3,7 @@
     package="com.example.hardyapplicationtest">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,7 +18,8 @@
         android:theme="@style/Theme.HardyApplicationTest"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="stateVisible|adjustPan">
-        <activity android:name=".offlineActivity"></activity>
+        <activity android:name=".tempActivity"></activity>
+        <activity android:name=".offlineActivity" />
         <activity
             android:name=".paitentreportActivity"
             android:screenOrientation="locked" />
